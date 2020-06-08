@@ -2,7 +2,7 @@
 A containerized (Windows) .NET Framework sample application setup with continuous deployment through **GitHub Actions** to Azure App Service.
 
 ## Directions
-1. To use this repository, *fork or clone the repo* 
+1. To use this repository, *fork this repository* 
 2. *Create the appropriate resources* in Azure and/or Docker Hub
 3. *Add/replace the github secrets variables with your own secrets* appropriate from each resource:<br/>
 
