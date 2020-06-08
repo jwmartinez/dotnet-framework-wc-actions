@@ -1,4 +1,4 @@
-# .NET Framework Continuous Deployment Sample
+# .NET Framework Continuous Deployment Sample #
 A containerized (Windows) .NET Framework sample application setup with continuous deployment through **GitHub Actions** to Azure App Service.
 
 ## Directions
