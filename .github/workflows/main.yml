@@ -28,7 +28,7 @@ jobs:
       with:
        # login-server: ${{ secrets.REGISTRY_USERNAME }}.azurecr.io
         login-server: jefmartidemo.azurecr.io
-        username: jefmartidemo
+        username: jefmartidemo.azurecr.io
         password: ${{ secrets.CONTAINER_REGISTRY_PASSWORD }}
         
     # Build and push your image to Azure Container Registry 
