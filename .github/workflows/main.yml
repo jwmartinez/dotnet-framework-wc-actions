@@ -27,15 +27,15 @@ jobs:
       uses: azure/docker-login@v1
       with:
        # login-server: ${{ secrets.REGISTRY_USERNAME }}.azurecr.io
-        login-server: ${{ secrets.CONTAINER_REGISTRY_NAME }}
+        login-server: jefmartidemo.azurecr.io
         username: jefmartidemo
         password: ${{ secrets.CONTAINER_REGISTRY_PASSWORD }}
         
     # Build and push your image to Azure Container Registry 
     - name: Build and Push container to ACR
       run: |
-        docker build --file=taskapp/taskapp/Dockerfile -t ${{ secrets.CONTAINER_REGISTRY_NAME }}/jefmartiblogdemo2:${{ github.sha }} .
-        docker push ${{ secrets.CONTAINER_REGISTRY_NAME }}/jefmartiblogdemo2:${{ github.sha }}  
+        docker build --file=taskapp/taskapp/Dockerfile -t jefmartidemo.azurecr.io/jefmartiblogdemo2:${{ github.sha }} .
+        docker push jefmartidemo.azurecr.io/jefmartiblogdemo2:${{ github.sha }}  
        
   # **** UNCOMMENT IF USING DOCKER HUB **** 
     # Use docker login
