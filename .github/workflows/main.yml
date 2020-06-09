@@ -44,7 +44,7 @@ jobs:
     #  with:
     #    username: ${{ secrets.DOCKERHUB_USERNAME }}
     #    password: ${{ secrets.DOCKERHUB_PASSWORD }} 
-  # ***************************************      
+  # ***************************************    *  
       
     # Deploy your container to App Service 
     - name: Deploy Container to Azure App Service
@@ -57,6 +57,6 @@ jobs:
     - name: Azure SQL Deploy
       uses: Azure/sql-action@v1
       with:
-        server-name: jefmartiserv.database.windows.net
+        server-name: jefmartidemo.database.windows.net
         connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING }}
         dacpac-package: './data.dacpac'
